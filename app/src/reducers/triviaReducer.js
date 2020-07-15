@@ -6,7 +6,7 @@ export const initialState = {
             category: 'Entertainment',
             correct_answer: 'Correct answer',
             difficulty: 'medium',
-            incorrect_answers: ['incorrect', 'incorrect2', 'incorrect3'],
+            incorrect_answers: [],
             question: '',
         }
     ],

@@ -5,9 +5,9 @@ import { connect } from "react-redux";
 
 export const Question = props => {
 
-    const onSelect = e => {
-        e.target.checked = !e.target.checked;
-    }
+    // const onSelect = e => {
+    //     e.target.checked = !e.target.checked;
+    // }
 
     return (
     <div className='question'>
@@ -17,10 +17,14 @@ export const Question = props => {
         <form>
             {props.question.incorrect_answers.map(answer => (
                 <label>
-                    <input type='radio' value='false' checked={false} onChange={onSelect()}/>
+                    <input type='radio' value='false' checked={false}/>
                     {answer}
                 </label>
             ))}
+            <label>
+                <input type='radio' value='true' checked={false} />
+                {props.question.correct_answer}
+            </label>
         </form>
     </div>
     );

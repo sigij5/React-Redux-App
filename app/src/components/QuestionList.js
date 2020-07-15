@@ -14,7 +14,7 @@ const QuestionList = props => {
     return (
         <div className='question-list'>
             <h4>Try Your Best:</h4>
-            <button onClick={fetchQuestions}>Begin</button>
+            <button onClick={fetchQuestions}>New Questions</button>
 
             {props.isFetching && <h4>Loading Trivia Questions</h4>}
             {props.error && <p className='error'>Error while fetching questions</p>}

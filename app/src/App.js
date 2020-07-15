@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Trivia Time</h1>
+        <h1>Trivia App</h1>
       </header>
 
       <QuestionList />
