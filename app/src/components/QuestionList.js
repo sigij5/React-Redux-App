@@ -13,7 +13,6 @@ const QuestionList = props => {
 
     return (
         <div className='question-list'>
-            <h4>Try Your Best:</h4>
             <button onClick={fetchQuestions}>New Questions</button>
 
             {props.isFetching && <h4>Loading Trivia Questions</h4>}

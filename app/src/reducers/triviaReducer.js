@@ -4,7 +4,7 @@ export const initialState = {
     questions: [
         {
             category: 'Entertainment',
-            correct_answer: 'Correct answer',
+            correct_answer: '',
             difficulty: 'medium',
             incorrect_answers: [],
             question: '',
